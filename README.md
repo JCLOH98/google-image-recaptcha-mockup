@@ -1,1 +1,1 @@
-# image-recaptcha-mockup
+# google-image-recaptcha-mockup
