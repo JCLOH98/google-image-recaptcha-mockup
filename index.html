@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+    <title>Google Image Recaptcha Mockup</title>
+</head>
+<body>
+    <h1>Google Image Recaptcha Mockup</h1>
+    <div id="captcha-main-div">
+        <div id="captcha-div">
+            <div id="captcha-left">
+                <div id="checkbox-container">
+                    <div id="captcha-checkbox" tabindex="0"></div>
+                    <div id="captcha-checkbox-spinner" class="spinner"></div>
+                </div>
+                <div id="captcha-text">I'm not a robot</div>
+            </div>
+            <div id="captcha-right">
+                <img id="captcha-img"title="captcha-image" src="./JCLOH98.png"/>
+                <div id="captcha-subtext"><a href="">Privacy</a> - <a href="">Terms</a></div>
+            </div>
+        </div>
+        <div id="captcha-error-msg">Please verify that you are not a robot.</div>
+    </div>
+
+    <button id="submit">Submit</button>
+
+    <div id="solve-box">
+        <div id="solve-title" class="solve-theme">
+            <div id="solve-title-subtext">Select all images with</div>
+            <div id="solve-title-text">bicycles</div>
+        </div>
+        <div id="solve-image-container">
+
+        </div>
+        <div id="solve-footer">
+            <div id="solve-footer-left">
+                <div class="icon" title="Get a new challenge">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="icon" title="Get an audio challenge">
+                    <i  class="fa-solid fa-headphones"></i>
+                </div>
+                <div class="icon" title="Help">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+            <div id="solve-footer-right">
+                <button id="verify" class="solve-theme">VERIFY</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
