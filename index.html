@@ -10,49 +10,64 @@
 </head>
 <body>
     <h1>Google Image Recaptcha Mockup</h1>
-    <div id="captcha-main-div">
-        <div id="captcha-div">
-            <div id="captcha-left">
-                <div id="checkbox-container">
-                    <div id="captcha-checkbox" tabindex="0"></div>
-                    <div id="captcha-checkbox-spinner" class="spinner"></div>
+    <div>
+        <div id="captcha-main-div">
+            <div id="captcha-div">
+                <div id="solve-box">
+                    <div id="solve-triangle-outline">
+                        <div id="solve-triangle-body"></div>
+                    </div>
+                    <div id="solve-header" class="pad5px">
+                        <div id="solve-image-div">
+                            <div id="solve-title" class="solve-theme">
+                                <div id="solve-title-subtext">Select all images with</div>
+                                <div id="solve-title-text">bicycles</div>
+                            </div>
+                            <div id="solve-image-main-container"></div>
+                            <div id="solve-image-error-msg">Please try again.</div>
+                        </div>
+            
+                        <div id="solve-audio-div">
+                            <div id="try-again-later" class="solve-theme">Try again later</div>
+                            <div class="pad5px">Your computer or network may be sending automated queries. To protect our users, we can't process your request right now. For more details visit <a href="">our help page.</a></div>
+                        </div>
+                    </div>
+            
+                    <div id="solve-footer" class="pad5px">
+                        <div id="solve-footer-left">
+                            <div id="refresh" class="icon" title="Get a new challenge">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </div>
+                            <div id="audio" class="icon" title="Get an audio challenge">
+                                <i  class="fa-solid fa-headphones"></i>
+                            </div>
+                            <div id="information" class="icon" title="Help">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                        </div>
+                        <div id="solve-footer-right">
+                            <button id="verify" class="solve-theme">VERIFY</button>
+                        </div>
+                    </div>
+            
+                    <div id="information-text">Click on any tiles you see with the object described in the text. If new images appear with the same object, click those as well.<br/>When there are none left, click Verify.</div>
                 </div>
-                <div id="captcha-text">I'm not a robot</div>
-            </div>
-            <div id="captcha-right">
-                <img id="captcha-img"title="captcha-image" src="./JCLOH98.png"/>
-                <div id="captcha-subtext"><a href="">Privacy</a> - <a href="">Terms</a></div>
-            </div>
-        </div>
-        <div id="captcha-error-msg">Please verify that you are not a robot.</div>
-    </div>
-
-    <button id="submit">Submit</button>
-
-    <div id="solve-box">
-        <div id="solve-title" class="solve-theme">
-            <div id="solve-title-subtext">Select all images with</div>
-            <div id="solve-title-text">bicycles</div>
-        </div>
-        <div id="solve-image-container">
-
-        </div>
-        <div id="solve-footer">
-            <div id="solve-footer-left">
-                <div class="icon" title="Get a new challenge">
-                    <i class="fa-solid fa-rotate-right"></i>
+                <div id="captcha-left">
+                    <div id="checkbox-container">
+                        <div id="captcha-checkbox" tabindex="0"></div>
+                        <div id="captcha-checkbox-spinner" class="spinner"></div>
+                    </div>
+                    <div id="captcha-text">I'm not a robot</div>
                 </div>
-                <div class="icon" title="Get an audio challenge">
-                    <i  class="fa-solid fa-headphones"></i>
-                </div>
-                <div class="icon" title="Help">
-                    <i class="fa-solid fa-circle-info"></i>
+                <div id="captcha-right">
+                    <img id="captcha-img"title="captcha-image" src="./JCLOH98.png"/>
+                    <div id="captcha-subtext"><a href="">Privacy</a> - <a href="">Terms</a></div>
                 </div>
             </div>
-            <div id="solve-footer-right">
-                <button id="verify" class="solve-theme">VERIFY</button>
-            </div>
+            <div id="captcha-error-msg">Please verify that you are not a robot.</div>
+            
         </div>
+        <button id="submit">Submit</button>
     </div>
 
     <script src="index.js"></script>
